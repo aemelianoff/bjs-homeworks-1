@@ -41,3 +41,19 @@ else  {
 getResult(2, 3, 1);
 getResult(9, 6, 1);
 getResult(2, 3, 4);
+
+//////////задача 2.2//////////
+function getAverageMark(...marks) {
+    let sum = 0;
+    let size = 0
+    if (marks.length > 5) {
+      size = marks.splice(5, marks.length);
+      console.log('слишком много оценок!');
+    }
+    else {}
+    for (let i = 0; i < marks.length; i++) {
+      sum += marks[i];
+    } 
+ console.log(`Средний бал: ${sum / marks.length}`);
+}
+getAverageMark(2, 2, 1, 11, 14, 1, 6);
