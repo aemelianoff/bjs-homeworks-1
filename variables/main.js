@@ -57,3 +57,17 @@ function getAverageMark(...marks) {
  console.log(`Средний бал: ${sum / marks.length}`);
 }
 getAverageMark(2, 2, 1, 11, 14, 1, 6);
+
+//////////задача 2.3//////////
+function askDrink(name, dateOfBirthday) {
+  let today = new Date().getFullYear();
+  let BirthdayYear = new Date(dateOfBirthday).getFullYear();
+  let age = today - BirthdayYear;
+  if (age >= 18) {
+    console.log(`Не желаете ли олд-фэшн, ${name}?`);
+  }
+  else {
+  console.log(`Сожалею, ${name}, но я не могу вам продать алкоголь. Зато могу предложить вам замечательный клюквенный компот!`);
+  }
+}
+askDrink('Василий', 'July 21, 2005');
