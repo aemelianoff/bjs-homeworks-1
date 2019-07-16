@@ -74,7 +74,7 @@ function getAverageMark(marks){
        for (let i = 0; i < marks.length; i++) {
          sum += marks[i];
         } 
-       averageMark = `Средний бал: ${sum / marks.length}`;
+       let averageMark = `Средний бал: ${sum / marks.length}`;
        console.log('слишком много оценок!');
        /*console.log(averageMark);*/
        return averageMark;
@@ -83,7 +83,7 @@ function getAverageMark(marks){
        for (let i = 0; i < marks.length; i++) {
          sum += marks[i];
         } 
-        averageMark = `Средний бал: ${sum / marks.length}`;
+        let averageMark = `Средний бал: ${sum / marks.length}`;
         /*console.log(averageMark);*/
         return averageMark;
       
