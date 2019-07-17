@@ -13,22 +13,20 @@ function calculateQuadraticEquation(){
 function getResult(a,b,c){
     // код для задачи №1 писать здесь
     //return x;
-'use strict';
-let D = b**2-4*a*c;
-let x1 = (b + Math.sqrt(D))/2*a;
-let x2 = (b - Math.sqrt(D))/2*a;
-let x = [x1, x2];
-if (D < 0) {
-   return x = [];
+  'use strict';
+  let D = b**2-4*a*c;
+  if (D < 0) {
+     return [];
    }
-else if (D == 0) {
-   return x = [x1];
-}
-else  {
-   return x;
-}
-
-}
+  let x1 = (b + Math.sqrt(D))/2*a;
+  let x2 = (b - Math.sqrt(D))/2*a;
+  if (D == 0) {
+     return [x1];
+  }
+  else  {
+     return [x1, x2];
+  }
+  }
 
 
 
