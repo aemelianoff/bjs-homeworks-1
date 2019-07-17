@@ -70,21 +70,12 @@ function getAverageMark(marks){
     let sum = 0;
     if (marks.length > 5) {
        marks.splice(5)
-       for (let i = 0; i < marks.length; i++) {
-         sum += marks[i];
-        } 
-       let averageMark = `Средний бал: ${sum / marks.length}`;
        console.log('слишком много оценок!');
-       /*console.log(averageMark);*/
-       return averageMark;
     }
-    else {
-       for (let i = 0; i < marks.length; i++) {
-         sum += marks[i];
-        } 
-        let averageMark = `Средний бал: ${sum / marks.length}`;
-        /*console.log(averageMark);*/
-        return averageMark;
-      
+    for (let i = 0; i < marks.length; i++) {
+       sum += marks[i];
+    } 
+    let averageMark = `Средний бал: ${sum / marks.length}`;
+    return averageMark;
     }
 }
