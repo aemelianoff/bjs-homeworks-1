@@ -76,4 +76,4 @@ function getAverageMark(marks){
     let averageMark = `Средний бал: ${sum / marks.length}`;
     return averageMark;
     }
-}
+
