@@ -24,7 +24,7 @@ function showSolutionsMessage( a, b, c )  {
   if (result.D < 0) {
     console.log(`Уравнение не имеет вещественных корней.`);
   }
-  if (result.D == 0) {
+  else if (result.D == 0) {
     console.log(`Уравнение имеет один корень: X₁ = ${result.roots}`);
   }
   else {
@@ -32,4 +32,6 @@ function showSolutionsMessage( a, b, c )  {
   }
 }
 
-showSolutionsMessage( 2, 3, 1 );
+showSolutionsMessage(2, 3, 4);
+showSolutionsMessage(2, 3, 1);
+showSolutionsMessage(9, 6, 1);
