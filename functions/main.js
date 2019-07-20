@@ -35,3 +35,48 @@ function showSolutionsMessage( a, b, c )  {
 showSolutionsMessage(2, 3, 4);
 showSolutionsMessage(2, 3, 1);
 showSolutionsMessage(9, 6, 1);
+
+
+//задача 2
+
+function getAverageMark(marks) {
+	let sum = 0;
+	for (let i = 0; i < marks.length; i++) {
+		sum += marks[i];
+	}
+	let result = sum / marks.length;
+	return result;
+}
+function getAverageScore(data) {
+	let value = new Object();
+  for (let prop in data) {
+		value[prop] = getAverageMark(data[prop]);
+  }
+  //console.log(value);
+  let averageSum = 0;
+  let propSum = 0;
+	for (let prop in value) {
+		averageSum += value[prop];
+    propSum++;
+	}
+  let average = averageSum / propSum;
+  //console.log(average)
+  let averageProp = 'average'
+  value[averageProp] = average
+  //console.log(value);
+  return value;
+}
+
+console.log(
+	getAverageScore({
+		algebra: [ 2, 1, 3, 2, 3, 1 ],
+		geometry: [ 2, 3, 1 ],
+		russian: [ 5, 5, 5, 5 ],
+		physics: [ 2, 2 ],
+		music: [ 2, 2, 1 ],
+		english: [ 2, 3, 3 ],
+		poetry: [ 1, 1, 1 ],
+		chemistry: [ 2 ],
+		french: [ 2, 3 ]
+	})
+);
