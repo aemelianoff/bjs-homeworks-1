@@ -22,6 +22,14 @@ function initPrintAnimalSound() {
 
 function getAnimalSound(animal) {
     // код для задачи №2 писать здесь
+    let sound = animal.sound;
+    this.animal = animal;
+    if (animal === undefined) {
+        return null;
+    } 
+    else if (animal) {
+    return sound;
+    }
 }
 
 function initCalculateStatement() {
